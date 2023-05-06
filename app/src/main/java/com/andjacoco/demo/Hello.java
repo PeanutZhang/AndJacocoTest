@@ -27,7 +27,7 @@ public class Hello {
         if (flag) {
             Log.i("aaMMMMMMMM", "aa");
         } else {
-            Log.i("aa", "bb");
+            Log.i("aa88888888888888", "bb");
         }
     }
 }
