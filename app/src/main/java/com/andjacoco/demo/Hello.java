@@ -25,7 +25,7 @@ public class Hello {
             int d = c + 1;
         }).start();
         if (flag) {
-            Log.i("aa", "aa");
+            Log.i("aaMMMMMMMM", "aa");
         } else {
             Log.i("aa", "bb");
         }
