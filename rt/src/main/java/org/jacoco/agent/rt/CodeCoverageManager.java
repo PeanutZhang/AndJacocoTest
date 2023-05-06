@@ -90,7 +90,7 @@ public class CodeCoverageManager {
             out = new FileOutputStream(filePath, false);
             IAgent agent = RT.getAgent();
             out.write(agent.getExecutionData(false));
-            Log.i(TAG, " generateCoverageFile write success");
+            Log.i(TAG, " generateCoverageFile write success path: "+filePath);
         } catch (Exception e) {
             e.printStackTrace();
             Log.e(TAG, " generateCoverageFile Exception:" + e.toString());
