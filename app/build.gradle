@@ -89,7 +89,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     androidTestImplementation project(path: ':jacoco-core')
 
-    implementation('org.jacoco:org.jacoco.report:0.8.5') {
+    implementation('org.jacoco:org.jacoco.report:0.8.2') {
         exclude group: 'org.jacoco', module: 'org.jacoco.core'
     }
 
