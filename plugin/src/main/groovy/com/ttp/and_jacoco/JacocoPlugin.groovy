@@ -12,6 +12,7 @@ class JacocoPlugin implements Plugin<Project> {
 
     @Override
     void apply(Project project) {
+        println 'zyh add some code ============================================================================='
         JacocoExtension jacocoExtension = project.extensions.create("jacocoCoverageConfig", JacocoExtension)
 
         project.configurations.all { configuration ->
