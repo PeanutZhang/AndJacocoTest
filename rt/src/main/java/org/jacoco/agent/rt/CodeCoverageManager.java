@@ -10,7 +10,9 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
@@ -50,7 +52,9 @@ public class CodeCoverageManager {
         dirPath = path + "/jacoco/" + versionCode + "/";
         File dir = new File(dirPath);
         if (!dir.exists()) dir.mkdirs();
-        filePath = dirPath + UUID.randomUUID().toString() + "_" + System.currentTimeMillis() + ".ec";
+        SimpleDateFormat sdf = new SimpleDateFormat("yyMMddHHmmss");
+        Date curDate = new Date(System.currentTimeMillis());
+        filePath = dirPath + UUID.randomUUID().toString() + "_" + sdf.format(curDate) + ".ec";
 
         File f = new File(filePath);
         Log.d(TAG, filePath + " canRead=" + f.canRead() + " canWrite=" + f.canWrite());
