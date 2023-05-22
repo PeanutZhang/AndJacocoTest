@@ -46,7 +46,7 @@ class JacocoTransform extends Transform {
     void transform(TransformInvocation transformInvocation) throws TransformException, InterruptedException, IOException {
         def dirInputs = new HashSet<>()
         def jarInputs = new HashSet<>()
-
+       println 'jacocoTransform() stat execu ---------------------------- '
         if (!transformInvocation.isIncremental()) {
             transformInvocation.getOutputProvider().deleteAll()
         }
