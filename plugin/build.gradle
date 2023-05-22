@@ -4,6 +4,17 @@ apply plugin: 'maven'
 apply plugin: 'java-gradle-plugin'
 group='com.github.ttpai'
 
+repositories {
+    maven {
+        url 'https://jitpack.io'
+    }
+}
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+    }
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -40,7 +51,7 @@ uploadArchives {
         mavenDeployer {
             pom.groupId = 'com.ttp.and_jacoco'
             pom.artifactId = 'jacocoPlugin'
-            pom.version = 'v8.0.0'
+            pom.version = 'v8.0.1'
             repository(url: uri('../localMavenRepository'))
         }
     }
