@@ -2,6 +2,7 @@
 buildscript {
     ext.kotlin_version = "1.5.10"
     repositories {
+        maven { url "repo" }
         maven { url "localMavenRepository" }
         maven { url 'https://jitpack.io' }
         maven { url 'https://maven.aliyun.com/repository/public/'}
@@ -15,8 +16,10 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
        if(useLocal.toBoolean()) {
            println " ffffffffkkkkkkkkkkkkkkkkkkkkkkk"
-            classpath 'com.ttp.and_jacoco:jacocoPlugin:v8.0.3'
-        } else if(useTest.toBoolean()){
+//            classpath 'com.ttp.and_jacoco:jacocoPlugin:v8.0.3'
+           classpath 'com.ttp.and_jacoco:plugin:1.2.0'
+//           classpath 'com.github.PeanutZhang:AndJacocoTest:v1.0.4'
+       } else if(useTest.toBoolean()){
             classpath 'com.github.PeanutZhang:AndJacocoTest:v1.0.4'
         }else {
             classpath 'com.github.ttpai.AndJacoco:plugin:0.0.6'
