@@ -51,7 +51,7 @@ uploadArchives {
         mavenDeployer {
             pom.groupId = 'com.ttp.and_jacoco'
             pom.artifactId = 'jacocoPlugin'
-            pom.version = 'v8.0.2'
+            pom.version = 'v8.0.3'
             repository(url: uri('../localMavenRepository'))
         }
     }

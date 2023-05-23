@@ -77,7 +77,7 @@ class JacocoTransform extends Transform {
     }
 
     def copy(TransformInvocation transformInvocation, def dirInputs, def jarInputs, List<String> includes) {
-       println 'start copy classess'
+       println 'start copy classess========================'
         def classDir = "${project.projectDir}/classes"
         ClassCopier copier = new ClassCopier(classDir, includes)
         if (!transformInvocation.incremental) {
