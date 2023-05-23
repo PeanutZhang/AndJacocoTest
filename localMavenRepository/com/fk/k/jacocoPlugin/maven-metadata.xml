@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.fk.k</groupId>
+  <artifactId>jacocoPlugin</artifactId>
+  <versioning>
+    <release>v250</release>
+    <versions>
+      <version>v250</version>
+    </versions>
+    <lastUpdated>20230523073301</lastUpdated>
+  </versioning>
+</metadata>
