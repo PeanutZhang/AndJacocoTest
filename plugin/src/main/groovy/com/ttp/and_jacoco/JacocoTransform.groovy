@@ -77,8 +77,8 @@ class JacocoTransform extends Transform {
     }
 
     def copy(TransformInvocation transformInvocation, def dirInputs, def jarInputs, List<String> includes) {
-       println 'start copy classess========================'
         def classDir = "${project.projectDir}/classes"
+        println "start copy classess======================== classDir: $classDir "
         ClassCopier copier = new ClassCopier(classDir, includes)
         if (!transformInvocation.incremental) {
             FileUtils.deletePath(new File(classDir))
