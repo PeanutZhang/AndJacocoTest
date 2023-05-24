@@ -16,8 +16,8 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
        if(useLocal.toBoolean()) {
            println " ffffffffkkkkkkkkkkkkkkkkkkkkkkk"
-//            classpath 'com.ttp.and_jacoco:jacocoPlugin:v8.0.3'
-           classpath 'com.ttp.and_jacoco:plugin:1.2.0'
+            classpath 'com.ttp.and_jacoco:jacocoPlugin:v8.0.3'
+//           classpath 'com.ttp.and_jacoco:plugin:1.2.0'
 //           classpath 'com.github.PeanutZhang:AndJacocoTest:v1.0.4'
        } else if(useTest.toBoolean()){
             classpath 'com.github.PeanutZhang:AndJacocoTest:v1.0.4'
