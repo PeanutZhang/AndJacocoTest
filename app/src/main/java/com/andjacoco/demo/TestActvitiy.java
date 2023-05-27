@@ -24,4 +24,9 @@ public class TestActvitiy extends AppCompatActivity {
               break;
         }
     }
+
+    public void test(){
+        Toast.makeText(this,"test+++++++++++",Toast.LENGTH_SHORT);
+
+    }
 }
